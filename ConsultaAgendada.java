@@ -4,7 +4,7 @@ public class ConsultaAgendada {
     private Data data;
     private Hora hora;
     private String nomePaciente;
-    private static int quantidade;
+    private static int quantidade = 0;
     private String nomeMedico;
 
     public ConsultaAgendada(){
@@ -13,6 +13,7 @@ public class ConsultaAgendada {
         setHora();
         setNomePaciente();
         setNomeMedico();
+        quantidade++;
     }
 
     public ConsultaAgendada(int h, int mi, int s, int d, int me, int a, String p, String m){
@@ -24,12 +25,16 @@ public class ConsultaAgendada {
          data.setAno(a);
          setNomePaciente(p);
          setNomeMedico(m);
-         
+         quantidade++;
         
     }
-
+    //arrumar
     public ConsultaAgendada(Data d, Hora h, String p, String m){
-        setData();
+        this.data = d;
+        this.hora = h;
+        setNomePaciente(p);
+        setNomeMedico(m);
+        quantidade++;
     }
 
     public void setData(int a, int b, int c){
@@ -40,19 +45,21 @@ public class ConsultaAgendada {
 
     public void setData(){
 
-        System.out.println("Por favor, digite uma data:");
+        System.out.println("Por favor, marque uma data");
         data.setDia();
         data.setMes();
         data.setAno();
     }
 
     public void setHora(int a, int b, int c){
-        
+        hora.setSeg(a);
+        hora.setMin(b);
+        hora.setHor(c);
     }
 
     public void setHora(){
 
-        System.out.println("Por favor, digite uma hora:");
+        System.out.println("Por favor, marque uma hora");
         hora.setHor();
         hora.setMin();
         hora.setSeg();
@@ -68,8 +75,7 @@ public class ConsultaAgendada {
 
         System.out.println("Por favor, digite o nome do paciente:");
         String paciente = ler.nextLine();
-
-        
+        this.nomePaciente = paciente;
 
     }
 
@@ -82,26 +88,30 @@ public class ConsultaAgendada {
 
         System.out.println("Por favor, digite o nome do médico:");
         String medico = ler.nextLine();
+
+        this.nomeMedico = medico;
     }
 
     public String getAmostra(){
-
+        
     }
 
     public String getData(){
-
+        return data.Mostra1();
     }
 
     public String getHora(){
+        return hora.getHora1();
 
     }
 
     public String getNomePaciente(){
+        return this.nomePaciente;
 
     }
 
     public String getNomeMedico(){
-
+        return this.nomeMedico;
     }
 
 
