@@ -1,1 +1,59 @@
-
+----------------------------------------------
+ Agendamento de consulta do primeiro paciente 
+Hora:  08:30:00
+Data:  12/03/2024
+Nome do Paciente:  Luciana
+Nome do Médico:  Dr. Gerônimo
+----------------------------------------------
+Marque sua consulta:
+Por favor, marque uma hora
+Digite a hora:
+10
+Digite os minutos:
+20
+Digite os segundos:
+0
+Por favor, marque uma data
+Por favor, insira o dia:
+30
+Por favor, insira o mês:
+04
+Por favor, insira o ano:
+2024
+Por favor, digite o nome do paciente:
+Cleia
+Por favor, digite o nome do médico:
+Dr. Jose
+----------------------------------------------
+  Agendamento de consulta do segundo paciente
+Hora:  10:20:00
+Data:  30/04/2024
+Nome do Paciente:  Cleia
+Nome do Médico:  Dr. Jose
+----------------------------------------------
+Reagendamento de consulta do primeiro paciente
+Por favor, marque uma hora
+Digite a hora:
+15
+Digite os minutos:
+30
+Digite os segundos:
+0
+Por favor, marque uma data
+Por favor, insira o dia:
+15
+Por favor, insira o mês:
+05
+Por favor, insira o ano:
+2024
+Por favor, digite o nome do paciente:
+Luciana
+Por favor, digite o nome do médico:
+dr. Andre
+----------------------------------------------
+Data:  15/05/2024
+Hora:  15:30:00
+Nome do Paciente:  Luciana
+Nome do Médico:  dr. Andre
+----------------------------------------------
+Quantidade Final de Consultas: 2
