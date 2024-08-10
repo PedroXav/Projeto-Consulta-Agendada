@@ -22,6 +22,10 @@ O projeto **ConsultaAgendada** é uma aplicação Java simples que permite o age
 - `ConsultaAgendada`: Gerencia a consulta, incluindo data, hora, paciente, médico e a contagem total de consultas.
 - `TestaConsultaAgendada`: Classe principal que realiza testes na classe `ConsultaAgendada`, exibindo e alterando seus dados.
 
+## Conclusão
+
+Este projeto foi desenvolvido como uma forma de praticar conceitos de orientação a objetos em Java, incluindo encapsulamento, validação de dados e uso de construtores e métodos getters e setters conforme padrão UML.
+
 ## Exemplo de Saída
 
 ```plaintext
@@ -38,5 +42,4 @@ Nome do Médico: Dr. Gerônimo
 ----------------------------------------------
 Quantidade Final de Consultas: 2
 
-## Conclusão
-Este projeto foi desenvolvido como uma forma de praticar conceitos de orientação a objetos em Java, incluindo encapsulamento, validação de dados e uso de construtores e métodos getters e setters conforme padrão UML.
+
