@@ -10,15 +10,15 @@ public class Data {
     Scanner ler = new Scanner(System.in);
 
     public Data(){
-        setDia();
-        setMes();
-        setAno();
+        this(0, 0, 0);
+
     }
 
     public Data(int d, int m, int a){
         this.dia = d;
         this.mes = m;
         this.ano = a;
+
     }
 
     public void setDia(int d){
@@ -27,6 +27,7 @@ public class Data {
         else{
             throw new IllegalArgumentException("Dia inválido.");
         }
+
     }
 
     public void setMes(int m){
@@ -63,7 +64,9 @@ public class Data {
 
                 ler.next();
             }
+
         }
+
     }
 
     public void setMes(){
@@ -84,7 +87,9 @@ public class Data {
 
                 ler.next();
             }
+
         }
+
     }
 
     public void setAno(){
@@ -107,23 +112,29 @@ public class Data {
 
                 ler.next();
             }
+
         }
+
     }
 
      public int getDia(){
         return this.dia;
+
     }
 
     public int getMes(){
         return this.mes;
+
     }
 
     public int getAno(){
         return this.ano;
+
     }
 
     public String Mostra1(){
         return String.format("%02d/%02d/%d", this.dia, this.mes, this.ano);
+
     }
 
     public String Mostra2(){
@@ -132,10 +143,12 @@ public class Data {
             "setembro", "outubro", "novembro", "dezembro"};
 
             return String.format("%02d/%s/%d", this.dia, meses[this.mes-1], this.ano);
+
     }
 
     public boolean bissexto(){
         return (this.ano % 4 == 0 && this.ano % 100 != 0) || (this.ano % 400 == 0);
+
     }
 
     public int diasTranscorridos(){
@@ -150,6 +163,7 @@ public class Data {
 
         totalDias += this.dia;
         return totalDias;
+
     }
 
     public void apresentaDataAtual(){
@@ -157,8 +171,7 @@ public class Data {
         DateFormat formatador = DateFormat.getDateInstance(DateFormat.FULL);
         String dataFormatada = formatador.format(data);
         System.out.println("Data atual:" + " " + dataFormatada);
+
     }
-
-
 
 }
