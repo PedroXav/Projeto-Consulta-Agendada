@@ -37,3 +37,6 @@ Nome do Médico: Dr. Gerônimo
 ...
 ----------------------------------------------
 Quantidade Final de Consultas: 2
+
+## Conclusão
+Este projeto foi desenvolvido como uma forma de praticar conceitos de orientação a objetos em Java, incluindo encapsulamento, validação de dados e uso de construtores e métodos getters e setters conforme padrão UML.
