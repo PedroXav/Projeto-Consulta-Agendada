@@ -13,11 +13,13 @@ public class TestaConsultaAgendada {
         System.out.println("Nome do Médico: " + " " + p1.getNomeMedico());
 
         System.out.println("----------------------------------------------");
-        System.out.println("  Agendamento de consulta do segundo paciente ");
+
+        System.out.println("Marque sua consulta:");
 
         ConsultaAgendada p2 = new ConsultaAgendada();
     
         System.out.println("----------------------------------------------");
+        System.out.println("  Agendamento de consulta do segundo paciente ");
 
         System.out.println("Hora: " + " " + p2.getHora());
         System.out.println("Data: " + " " + p2.getData());
