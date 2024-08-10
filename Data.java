@@ -49,7 +49,7 @@ public class Data {
     public void setDia(){
         while(true){
             try{
-                System.out.println("Por favor, insira o dia:");
+                System.out.println(" Insira o dia:");
                 int dia = ler.nextInt();
             if(dia>= 1 && dia<=31){
                 this.dia = dia;
@@ -72,7 +72,7 @@ public class Data {
     public void setMes(){
         while(true){
             try{
-                System.out.println("Por favor, insira o mês:");
+                System.out.println(" Insira o mês:");
                 int mes = ler.nextInt();
             if(mes>= 1 && mes<=12){
                 this.mes = mes;
@@ -95,7 +95,7 @@ public class Data {
     public void setAno(){
         while(true){
             try{
-                System.out.println("Por favor, insira o ano:");
+                System.out.println(" Insira o ano:");
                 int ano = ler.nextInt();
             if(ano>=1){
                 this.ano = ano;
